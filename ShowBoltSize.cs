@@ -25,7 +25,7 @@ namespace ShowBoltSize
         ExactNumber, DirectionDistance, Direction
     }
 
-    public class BeercasePhysics : Mod
+    public class ShowBoltSize : Mod
     {
         public override string ID => "ShowBoltSize"; //Your mod ID (unique)
         public override string Name => "ShowBoltSize"; //You mod name
@@ -149,7 +149,7 @@ namespace ShowBoltSize
         private static string GenerateDisplayString(SizeShowType showType, int wrenchSize, int boltSize)
         {
             string ret = "";
-            string sizing = wrenchSize > boltSize ? "large" : "small";
+            string sizing = boltSize > wrenchSize ? "large" : "small";
 
             switch (showType)
             {
@@ -170,7 +170,7 @@ namespace ShowBoltSize
                     else
                         adjSizing = "way ";
 
-                    ret = $"Wrench is {adjSizing}too {sizing}";
+                    ret = $"Bolt is {adjSizing}too {sizing}";
                     break;
             }
 
