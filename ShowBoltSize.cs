@@ -27,11 +27,11 @@ namespace ShowBoltSize
 
     public class ShowBoltSize : Mod
     {
-        public override string ID => "ShowBoltSize"; //Your mod ID (unique)
-        public override string Name => "ShowBoltSize"; //You mod name
-        public override string Author => "cannibaljeebus (Original by Lex and wolf_vx)"; //Your Username
-        public override string Version => "1.0.0"; //Version
-        public override string Description => ""; //Short description of your mod
+        public override string ID => "ShowBoltSize";
+        public override string Name => "ShowBoltSize";
+        public override string Author => "cannibaljeebus (Original by Lex and wolf_vx)";
+        public override string Version => "1.0.0"; 
+        public override string Description => "Displays a helpful message if a bolt is too large or too small for a bolt"; 
 
         private static readonly float TotalDisplayTime = 0.75f;
         private FsmFloat WrenchSize;
